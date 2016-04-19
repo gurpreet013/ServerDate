@@ -29,6 +29,8 @@ Include the following `<SCRIPT>` element in your web page:
   window.ServerDate = {
     // Show debug information in console
     debug: false,
+    // Max synchronizing iterations. 10 it's a good number of iterations.
+    iterations: 10,
     // After a synchronization there may be a significant difference between our
     // clock and the server's clock.  Rather than make the change abruptly, we
     // change our clock by adjusting it once per second by the amortizationRate.
